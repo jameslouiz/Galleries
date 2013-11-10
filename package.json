@@ -1,0 +1,37 @@
+{
+    "name": "Galleries",
+    "title": "jQuery Image gallery Plugin",
+    "description": "Simple, elegant image gallery plugin to load external images and insert them into the markup",
+    "version": "0.0.4",
+    "homepage": "http://www.jameslouiz.com/experiment/galleries/",
+    "author": {
+        "name": "James Thomoson - @jameslouiz",
+        "email": "james.tommo@yahoo.co.uk",
+        "url": "http://jameslouiz.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/jameslouiz/galleries.git"
+    },
+    "bugs": {
+        "url": "https://github.com/jameslouiz/galleries/issues"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://www.opensource.org/licenses/MIT"
+        }
+    ],
+    "dependencies": {},
+    "devDependencies": {
+        "grunt": "0.4.x",
+        "grunt-contrib-uglify": "~0.1.1"
+    },
+    "keywords": [
+        "galleries",
+        "images",
+        "image gallery",
+        "image swapper"
+    ]
+}
+
