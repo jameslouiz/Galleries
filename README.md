@@ -7,7 +7,7 @@ A simple jquery image gallery plugin
 Documentation coming soon...
 
 ```HTML
-<a href="path/to/large/image.png" data-target=".someSelector" class="thumbnail-link">
+<a href="path/to/large/image.png" data-stage=".someSelector" class="thumbnail-link">
     <img class="thumbnail" src="path/to/thumbnail.jpg" />
 </a>
 ```

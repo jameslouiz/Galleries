@@ -10,7 +10,7 @@
     };
 
     var Gallery = function (element, options) {
-        this.init(element, options)
+        this.init(element, options);
     }
 
     Gallery.Defaults = {
@@ -35,6 +35,11 @@
         {
             this.$element = $(element);
             this.options = $.extend({}, Gallery.Defaults, options);
+            //this.dataOptions = this.$element.data();
+
+            //if (typeof this.dataOptions == 'object' && !$.isEmptyObject(this.dataOptions)) {
+            //    this.settings = $.extend(true, options, this.dataOptions);
+            //}
 
             if (typeof window.galleryStack !== 'object') {
                 window.galleryStack = $([])
@@ -44,7 +49,7 @@
 
             // Setup vars
             this.stack = window.galleryStack;
-            this.target = $('#preview');
+            this.target = $(this.$element.data('stage'));
             this.src = this.$element.attr('href');
 
             this.callHook('onInit');
@@ -216,9 +221,8 @@
     // ===============
 
     $(document).on('click', '[data-stage]', function (e) {
+        e.preventDefault();
         $(this).gallery('get');
-
-        e.preventDefault()
     })
 
 
