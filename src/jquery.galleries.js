@@ -189,7 +189,6 @@
 
 
     // GALLERY PLUGIN DEFINITION
-    // ========================
 
     var old = $.fn.gallery;
 
@@ -209,7 +208,6 @@
 
 
     // Gallery NO CONFLICT
-    // ==================
 
     $.fn.gallery.noConflict = function () {
         $.fn.gallery = old;
@@ -217,8 +215,7 @@
     }
 
 
-    // BUTTON DATA-API
-    // ===============
+    // EVENT BINDING
 
     $(document).on('click', '[data-stage]', function (e) {
         e.preventDefault();
